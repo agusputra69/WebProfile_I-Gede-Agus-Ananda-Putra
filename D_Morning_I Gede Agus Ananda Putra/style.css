@@ -101,7 +101,7 @@ body {
     color: rgb(220, 220, 220);
 }
 hr{
-    border: 1px dashed white;
+    border: 2px dashed white;
     margin: 0;
 }
 
@@ -119,7 +119,15 @@ hr{
     font-size: clamp(1em, 10vw, 1.5em);
 }
 
-.about__education-card {
+.education {
+    background-color: #0F1D25;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 15vw;
+    color: rgb(220, 220, 220);
+}
+
+.education-card {
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
@@ -127,19 +135,47 @@ hr{
     margin-top: 12px;
 }
 
-.about__education-card > .detail {
+.education-card > .detail {
     flex: 0 50%;
 }
 
-.about__education-card > .detail > p {
+.education-card > .detail > p {
     margin: 4px;
 }
 
-.about__education-card > aside {
+.education-card > aside {
     flex: 0 50%;
     text-align: right;
 }
 
+.certificates {
+    background-color: #0F1D25;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 15vw;
+    color: rgb(220, 220, 220);
+}
+
+.certificate-card {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.certificate-card > .detail {
+    flex: 0 50%;
+}
+
+.certificate-card > .detail > p {
+    margin: 4px;
+}
+
+.certificates-card > aside {
+    flex: 0 50%;
+    text-align: right;
+}
 .about__vision-mission {
     width: 100%;
     display: flex;
