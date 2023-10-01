@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+3");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Source Sans 3";
+}
+
+.navbar {
+    position: fixed;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15vw;
+    background-color: transparent;
+    color: white;
+    mix-blend-mode: exclusion;
+}
+
+.navbar__section-links {
+    padding: 0;
+}
+
+.navbar__section-links > ul {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar__section-links > ul > li > a {
+    text-decoration: none;
+    color: white;
+    mix-blend-mode: exclusion;
+    &:hover {
+        cursor: pointer;
+        color: gray;
+    }
+}
+
+.home {
+    background-image: url(assets/bg_1.jpg);
+    background-size: cover;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: top;
+    gap: 5vw;
+    padding: 30vh 15vw;
+    color: white;
+}
+
+.foto-profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 0 5px #0F1D25;
+    margin-bottom: 20px;
+}
+
+.home__introduction {
+    background-color: transparent;
+}
+
+.home__introduction > h2 {
+    font-size: clamp(1em, 10vw, 2em);
+    text-shadow: 3px 3px #0F1D25;
+}
+
+.home__introduction > h1 {
+    font-size: clamp(2em, 10vw, 5em);
+    margin: 0;
+    text-shadow: 3px 3px #0F1D25;
+}
+
+.home__introduction > p {
+    font-size: clamp(1em, 10vw, 2em);
+    text-align: justify;
+}
+
+.home__introduction > p > mark {
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    padding: 0 5px;
+}
+
+.about {
+    background-color: #0F1D25;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    padding: 25vh 15vw;
+    color: rgb(220, 220, 220);
+}
+
+.about__general {
+    text-align: justify;
+}
+
+.about__general > h2 {
+    text-align: justify;
+    font-size: clamp(1em, 10vw, 2em);
+}
+
+.about__general > p {
+    text-align: justify;
+    font-size: clamp(1em, 10vw, 1.5em);
+}
+
+.about__vision-mission {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: top;
+    gap: 5vw;
+}
+
+.about__vision {
+    flex: 0 50%;
+}
+
+.about__vision > h2 {
+    text-align: center;
+    font-size: clamp(1em, 10vw, 2em);
+}
+
+.about__vision > p {
+    text-align: center;
+    font-size: clamp(1em, 10vw, 1.5em);
+}
+
+.about__mission {
+    flex: 0 50%;
+}
+
+.about__mission > h2 {
+    text-align: center;
+    font-size: clamp(1em, 10vw, 2em);
+}
+
+.about__mission > p {
+    text-align: center;
+    font-size: clamp(1em, 5vw, 1.5em);
+}
+
+.contact {
+    background-image: linear-gradient(#0F1D25, 80%, black);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 5vw;
+    padding: 25vh 15vw;
+    color: rgb(220, 220, 220);
+}
+
+.contact__personal {
+    flex: 0 50%;
+}
+
+.contact__personal > h2 {
+    font-size: clamp(1em, 10vw, 2em);
+}
+
+.contact__personal > p {
+    font-size: clamp(1em, 5vw, 1.5em);
+}
+
+.contact__personal > ul {
+    padding: 0;
+    list-style: none;
+}
+
+.contact__personal > ul > p {
+    font-size: clamp(1em, 5vw, 1.3em);
+}
+
+.contact__personal > ul > li {
+    font-size: clamp(1em, 5vw, 1.3em);
+}
+
+.contact__socials {
+    flex: 0 50%;
+}
+
+.contact__socials > h2 {
+    font-size: clamp(1em, 10vw, 2em);
+}
+
+.contact__socials > p {
+    font-size: clamp(1em, 5vw, 1.5em);
+}
+
+.contact__socials > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0;
+    list-style: none;
+    gap: 50px;
+}
+
+.contact__socials > ul > p {
+    font-size: clamp(1em, 5vw, 1.3em);
+}
+
+.contact__socials > ul > li {
+    font-size: clamp(1em, 5vw, 1.3em);
+}
+
+.contact__socials > ul > li > a {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: clamp(1em, 5vw, 1.5em);
+    &:hover {
+        cursor: pointer;
+        color: gray;
+    }
+}
+
+.copyright {
+    margin: 0;
+    padding: 5vh 15vw;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: clamp(1em, 5vw, 1.5em);
+}
