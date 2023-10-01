@@ -96,9 +96,13 @@ body {
     background-color: #0F1D25;
     display: flex;
     flex-direction: column;
-    gap: 5vw;
-    padding: 25vh 15vw;
+    gap: 2vw;
+    padding: 2vh 15vw;
     color: rgb(220, 220, 220);
+}
+hr{
+    border: 1px dashed white;
+    margin: 0;
 }
 
 .about__general {
@@ -113,6 +117,27 @@ body {
 .about__general > p {
     text-align: justify;
     font-size: clamp(1em, 10vw, 1.5em);
+}
+
+.about__education-card {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.about__education-card > .detail {
+    flex: 0 50%;
+}
+
+.about__education-card > .detail > p {
+    margin: 4px;
+}
+
+.about__education-card > aside {
+    flex: 0 50%;
+    text-align: right;
 }
 
 .about__vision-mission {
